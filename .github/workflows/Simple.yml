@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone Repository
-       uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Install Dependencies
         run: |
           echo "Running Installing Dependencies"
@@ -23,9 +23,5 @@ jobs:
           echo "Running Linting"
           npm run lint
           # you need this so that your does not run in watch mode.
-        env: 
+        env:
           CI: true
-
-
-
-
