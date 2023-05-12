@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check for Security
-        runs: |
+        run: |
           echo "Running Security Check.."
           sleep 5s;
           echo "Security check 1...."
